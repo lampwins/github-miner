@@ -1,0 +1,99 @@
+url: https://github.com/lampwins/github-miner
+description: >
+  Miner for github.com address space
+prototypes:
+  hooksMiner:
+    author: John Anderson (@lampwins)
+    class: githubminer.Miner
+    development_status: EXPERIMENTAL
+    node_type: miner
+    indicator_types:
+      - IPv4
+    tags:
+      - extension
+      - githubminer
+    description: >
+      Mine github address space for hooks
+    config:
+      type: hooks
+      # source name used in the indicators
+      source_name: github.hook
+      # age out of indicators
+      age_out:
+        sudden_death: true
+        default: null
+      # flag indicators with share level green
+      attributes:
+        share_level: green
+
+  gitMiner:
+    author: John Anderson (@lampwins)
+    class: githubminer.Miner
+    development_status: EXPERIMENTAL
+    node_type: miner
+    indicator_types:
+      - IPv4
+    tags:
+      - extension
+      - githubminer
+    description: >
+      Mine github address space for git
+    config:
+      type: git
+      # source name used in the indicators
+      source_name: github.git
+      # age out of indicators
+      age_out:
+        sudden_death: true
+        default: null
+      # flag indicators with share level green
+      attributes:
+        share_level: green
+
+  pagesMiner:
+    author: John Anderson (@lampwins)
+    class: githubminer.Miner
+    development_status: EXPERIMENTAL
+    node_type: miner
+    indicator_types:
+      - IPv4
+    tags:
+      - extension
+      - githubminer
+    description: >
+      Mine github address space for pages
+    config:
+      type: pages
+      # source name used in the indicators
+      source_name: github.pages
+      # age out of indicators
+      age_out:
+        sudden_death: true
+        default: null
+      # flag indicators with share level green
+      attributes:
+        share_level: green
+
+  importerMiner:
+    author: John Anderson (@lampwins)
+    class: githubminer.Miner
+    development_status: EXPERIMENTAL
+    node_type: miner
+    indicator_types:
+      - IPv4
+    tags:
+      - extension
+      - githubminer
+    description: >
+      Mine github address space for importer
+    config:
+      type: importer
+      # source name used in the indicators
+      source_name: github.importer
+      # age out of indicators
+      age_out:
+        sudden_death: true
+        default: null
+      # flag indicators with share level green
+      attributes:
+        share_level: green

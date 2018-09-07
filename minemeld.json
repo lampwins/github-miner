@@ -1,0 +1,17 @@
+{
+    "version": "0.1",
+    "name": "github-miner",
+    "author": "John Anderson",
+    "author_email": "lampwins@gmail.com",
+    "description": "Miner for github.com address space",
+    "url": "https://github.com/lampwins/github-miner",
+    "entry_points": {
+        "minemeld_nodes": {
+            "githubminer.Miner": "githubminer.node:Miner"
+        },
+        "minemeld_prototypes": {
+            "githubminer.prototypes": "githubminer:prototypes"
+        }
+    },
+    "manifest_version": 0
+}
